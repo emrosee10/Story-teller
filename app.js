@@ -73,15 +73,8 @@ document.getElementById('story-form').addEventListener('submit', function (event
     storyData.push(newStoryEntry);
     localStorage.setItem('storyData', JSON.stringify(storyData));
 
-    document.getElementById('add-button').disabled = true;  // Disable the button
-    document.getElementById('rights-info').style.display = 'block';  // Show rights info
-
     renderStory();
 });
 
 function getRandomColor() {
-    const colors = ['#FFB6C1', '#FF7F50', '#FFD700', '#ADFF2F', '#8A2BE2', '#7FFF00'];
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-
-renderStory();
+    const colors = ['#FFB6C1', '#FF7
