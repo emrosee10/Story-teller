@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
     color: #333;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -41,11 +47,16 @@ p {
 
 textarea, input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    min-height: 150px;
+}
+
+#image-upload {
+    margin-top: 10px;
 }
 
 #text-formatting button {
@@ -72,6 +83,13 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+#rights-info {
+    font-size: 12px;
+    color: #999;
+    display: none;
+    margin-top: 10px;
 }
 
 footer {
@@ -102,4 +120,57 @@ footer {
 .contribution {
     margin-top: 10px;
     font-size: 18px;
+}
+
+.like-dislike-buttons {
+    margin-top: 10px;
+}
+
+.like-button, .dislike-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.like-button:hover, .dislike-button:hover {
+    background-color: #0056b3;
+}
+
+.like-count, .dislike-count {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        font-size: 28px;
+    }
+
+    textarea, input[type="text"] {
+        min-height: 200px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    textarea, input[type="text"] {
+        min-height: 180px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
 }
