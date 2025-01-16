@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalesTogether - Collaborative Storytelling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TalesTogether</h1>
+        <p>"Crafting Stories, One Word at a Time"</p>
+    </header>
+
+    <section id="story-section">
+        <h2>The Story So Far:</h2>
+        <div id="story-content"></div>
+    </section>
+
+    <section id="contribution-form">
+        <h2>Your Contribution:</h2>
+        <form id="story-form">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <textarea id="story-text" placeholder="Write your part of the story..." required></textarea>
+            <div id="text-formatting">
+                <button type="button" onclick="applyFormatting('bold')"><b>B</b></button>
+                <button type="button" onclick="applyFormatting('italic')"><i>I</i></button>
+                <button type="button" onclick="applyFormatting('underline')"><u>U</u></button>
+            </div>
+            <button type="submit">Add Your Part</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TalesTogether | All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
