@@ -23,13 +23,15 @@
         <form id="story-form">
             <input type="text" id="username" placeholder="Your Name" required>
             <textarea id="story-text" placeholder="Write your part of the story..." required></textarea>
+            <input type="file" id="image-upload" accept="image/*">
             <div id="text-formatting">
                 <button type="button" onclick="applyFormatting('bold')"><b>B</b></button>
                 <button type="button" onclick="applyFormatting('italic')"><i>I</i></button>
                 <button type="button" onclick="applyFormatting('underline')"><u>U</u></button>
             </div>
-            <button type="submit">Add Your Part</button>
+            <button type="submit" id="add-button">Add Your Part</button>
         </form>
+        <p id="rights-info">All rights reserved.</p>
     </section>
 
     <footer>
