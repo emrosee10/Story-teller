@@ -5,22 +5,21 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f9;
     color: #333;
-    padding: 0;
-    margin: 0;
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #1E3A8A;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-bottom: 4px solid #4B6C9B;
 }
 
 #logo {
-    width: 40px;
+    width: 50px;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -35,69 +34,63 @@ p {
     font-weight: 300;
 }
 
-#story-section {
+main {
     margin: 20px;
-    background-color: white;
+}
+
+#story-section {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contribution-form {
-    margin: 20px;
-    background-color: white;
+    margin-top: 30px;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 textarea, input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 input[type="text"] {
-    width: 50%;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-#image-upload {
-    margin-top: 10px;
-}
-
-#text-formatting button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-#text-formatting button:hover {
-    background-color: #e0e0e0;
+textarea {
+    min-height: 150px;
 }
 
 button[type="submit"] {
-    background-color: #007BFF;
+    background-color: #1E3A8A;
     color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
-    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0F255F;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 15px;
+    background-color: #1E3A8A;
     color: white;
     position: fixed;
     width: 100%;
@@ -111,67 +104,50 @@ footer {
 .story-part {
     padding: 15px;
     margin-bottom: 15px;
+    background-color: #f9fafb;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.username {
-    font-weight: bold;
-}
-
-.contribution {
-    margin-top: 10px;
+.story-part .username {
+    font-weight: 600;
+    color: #1E3A8A;
     font-size: 18px;
 }
 
-.like-dislike-buttons {
+.story-part .content {
     margin-top: 10px;
+    font-size: 16px;
 }
 
-.like-button, .dislike-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-right: 5px;
-    border-radius: 5px;
+#story-content {
+    margin-top: 20px;
 }
 
-.like-button:hover, .dislike-button:hover {
-    background-color: #0056b3;
-}
-
-.like-count, .dislike-count {
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-    header {
+    header h1 {
         font-size: 28px;
     }
-
-    textarea, input[type="text"] {
-        min-height: 200px;
+    p {
+        font-size: 16px;
     }
-
+    textarea, input[type="text"] {
+        padding: 12px;
+    }
     button[type="submit"] {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 26px;
+    header h1 {
+        font-size: 24px;
     }
-
     textarea, input[type="text"] {
-        min-height: 180px;
+        padding: 10px;
+        font-size: 14px;
     }
-
     button[type="submit"] {
         font-size: 14px;
     }
