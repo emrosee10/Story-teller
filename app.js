@@ -77,4 +77,8 @@ document.getElementById('story-form').addEventListener('submit', function (event
 });
 
 function getRandomColor() {
-    const colors = ['#FFB6C1', '#FF7
+    const colors = ['#FFB6C1', '#FF7F50', '#98FB98', '#E0FFFF', '#D3D3D3'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+renderStory();
