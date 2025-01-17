@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalesTogether - Collaborative Storytelling</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Story Builder - Create branching stories easily!">
+  <title>Interactive Story Builder</title>
+  
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <!-- Header Section -->
     <header>
-        <img src="logo.png" alt="Logo" id="logo">
-        <h1>TalesTogether</h1>
-        <p>"Where Stories Evolve Together"</p>
+      <h1>Interactive Story Builder</h1>
+      <nav>
+        <button id="login-btn">Log In</button>
+        <button id="signup-btn">Sign Up</button>
+      </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section id="story-section">
-            <h2>The Story So Far:</h2>
-            <div id="story-content"></div>
-        </section>
+      <!-- Story Builder Area -->
+      <div id="story-builder">
+        <h2>Build Your Story</h2>
+        <div id="drag-area">
+          <p>Drag and drop your story points here</p>
+        </div>
+        <button id="preview-btn">Preview Story</button>
+      </div>
 
-        <section id="contribution-form">
-            <h2>Your Contribution:</h2>
-            <form id="story-form">
-                <input type="text" id="username" placeholder="Your Name" required>
-                <textarea id="story-text" placeholder="Write your part of the story..." required></textarea>
-                <input type="file" id="image-upload" accept="image/*">
-                <button type="submit" id="add-button">Add Your Part</button>
-            </form>
-        </section>
+      <!-- Story Preview Area -->
+      <div id="preview-area" class="hidden">
+        <h2>Story Preview</h2>
+        <div id="story-output"></div>
+        <button id="back-btn">Back to Builder</button>
+      </div>
     </main>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 TalesTogether | All rights reserved.</p>
-    </footer>
-
-    <script src="app.js"></script>
+  <!-- Link to external JavaScript file -->
+  <script src="app.js"></script>
 </body>
 </html>
