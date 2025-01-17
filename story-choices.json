@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "text": "You wake up in a forest. What do you do?",
+    "choices": [
+      { "text": "Explore the forest", "nextId": 2 },
+      { "text": "Stay where you are", "nextId": 3 }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "You find a hidden path. Follow it?",
+    "choices": [
+      { "text": "Yes", "nextId": 4 },
+      { "text": "No", "nextId": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "A wolf appears! Game over.",
+    "choices": []
+  }
+]
