@@ -1,154 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Reset and Body Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  color: #333;
 }
 
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+/* Header Styling */
 header {
-    background-color: #1E3A8A;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    border-bottom: 4px solid #4B6C9B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3b3f58;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-#logo {
-    width: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
+header h1 {
+  margin: 0;
 }
 
-h1 {
-    font-size: 36px;
-    display: inline;
+nav button {
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  background: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-p {
-    font-size: 18px;
-    font-weight: 300;
+nav button:hover {
+  background: #4752c4;
 }
 
+/* Main Content */
 main {
-    margin: 20px;
+  margin-top: 1rem;
 }
 
-#story-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#story-builder, #preview-area {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
-#contribution-form {
-    margin-top: 30px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.hidden {
+  display: none;
 }
 
-textarea, input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+/* Drag Area */
+#drag-area {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-input[type="text"] {
-    font-size: 18px;
-    margin-bottom: 15px;
+#drag-area p {
+  color: #888;
+  font-size: 1rem;
 }
 
-textarea {
-    min-height: 150px;
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #3b3f58;
+  color: white;
+  cursor: pointer;
 }
 
-button[type="submit"] {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    width: 100%;
-    margin-top: 15px;
-}
-
-button[type="submit"]:hover {
-    background-color: #0F255F;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #1E3A8A;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-#story-content {
-    margin-top: 20px;
-}
-
-.story-part {
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #f9fafb;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.story-part .username {
-    font-weight: 600;
-    color: #1E3A8A;
-    font-size: 18px;
-}
-
-.story-part .content {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-#story-content {
-    margin-top: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-    p {
-        font-size: 16px;
-    }
-    textarea, input[type="text"] {
-        padding: 12px;
-    }
-    button[type="submit"] {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-    textarea, input[type="text"] {
-        padding: 10px;
-        font-size: 14px;
-    }
-    button[type="submit"] {
-        font-size: 14px;
-    }
+button:hover {
+  background: #2a2f47;
 }
